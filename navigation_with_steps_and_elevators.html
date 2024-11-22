@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6348500210cae0119c53809bc8be1c4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b6348500210cae0119c53809bc8be1c4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b6348500210cae0119c53809bc8be1c4 = L.map(
+                "map_b6348500210cae0119c53809bc8be1c4",
+                {
+                    center: [36.3601, 127.3398],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3ecc7fea48304181cf568831e675c452 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3ecc7fea48304181cf568831e675c452.addTo(map_b6348500210cae0119c53809bc8be1c4);
+        
+    
+            var poly_line_07cbf060726233c301cef5a1ebd80036 = L.polyline(
+                [[36.3619608, 127.3349376], [36.3621559, 127.3354781], [36.3623602, 127.336032], [36.3622352, 127.3362256], [36.3620909, 127.33658], [36.3620471, 127.3367029], [36.361444, 127.3380412], [36.3612376, 127.3384993], [36.3607083, 127.3396739], [36.3604322, 127.3403083], [36.3602048, 127.3408139], [36.359991, 127.341284], [36.3598549, 127.3416529], [36.3596997, 127.3423052], [36.3594531, 127.3433546], [36.3594124, 127.34354], [36.3593755, 127.3437084], [36.3593398, 127.3438742], [36.3591704, 127.345015], [36.3584215, 127.3448354], [36.3575994, 127.3446477]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_b6348500210cae0119c53809bc8be1c4);
+        
+    
+            var marker_ad5241d12bf270e1c442076e995aa8ab = L.marker(
+                [36.3624, 127.3348],
+                {}
+            ).addTo(map_b6348500210cae0119c53809bc8be1c4);
+        
+    
+            var icon_543724b4016641f4dca761c6eec306d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ad5241d12bf270e1c442076e995aa8ab.setIcon(icon_543724b4016641f4dca761c6eec306d8);
+        
+    
+        var popup_0c0a857280acc2e2a49b1415329e1d1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42f0b9831d275cf97beb77baaf3212fe = $(`<div id="html_42f0b9831d275cf97beb77baaf3212fe" style="width: 100.0%; height: 100.0%;">출발지: 유성온천공원</div>`)[0];
+                popup_0c0a857280acc2e2a49b1415329e1d1f.setContent(html_42f0b9831d275cf97beb77baaf3212fe);
+            
+        
+
+        marker_ad5241d12bf270e1c442076e995aa8ab.bindPopup(popup_0c0a857280acc2e2a49b1415329e1d1f)
+        ;
+
+        
+    
+    
+            marker_ad5241d12bf270e1c442076e995aa8ab.bindTooltip(
+                `<div>
+                     출발지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0f8335eb319e0117327f0d737e963f3 = L.marker(
+                [36.3577, 127.3449],
+                {}
+            ).addTo(map_b6348500210cae0119c53809bc8be1c4);
+        
+    
+            var icon_b054c55a75fe42bcb409228715f1716b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0f8335eb319e0117327f0d737e963f3.setIcon(icon_b054c55a75fe42bcb409228715f1716b);
+        
+    
+        var popup_bd798e3305453cbffc8f4144bb4acaed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64225d74591c91b73aa87c57dbd9062c = $(`<div id="html_64225d74591c91b73aa87c57dbd9062c" style="width: 100.0%; height: 100.0%;">도착지: 궁동119안전센터</div>`)[0];
+                popup_bd798e3305453cbffc8f4144bb4acaed.setContent(html_64225d74591c91b73aa87c57dbd9062c);
+            
+        
+
+        marker_f0f8335eb319e0117327f0d737e963f3.bindPopup(popup_bd798e3305453cbffc8f4144bb4acaed)
+        ;
+
+        
+    
+    
+            marker_f0f8335eb319e0117327f0d737e963f3.bindTooltip(
+                `<div>
+                     도착지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf1c6f069eb2abf049a033cd02945bc6 = L.marker(
+                [36.3601, 127.3398],
+                {}
+            ).addTo(map_b6348500210cae0119c53809bc8be1c4);
+        
+    
+            var div_icon_7340c7bbbc10ae0013b8047fa6bd56ba = L.divIcon({"className": "empty", "html": "\u003cdiv style=\u0027font-size: 12pt; color : black\u0027\u003e\ucd1d \uac70\ub9ac: 1172.18m\u003cbr\u003e(1.17km)\u003cbr\u003e\uc608\uc0c1 \uc18c\uc694 \uc2dc\uac04: 14.7\ubd84\u003c/div\u003e"});
+            marker_cf1c6f069eb2abf049a033cd02945bc6.setIcon(div_icon_7340c7bbbc10ae0013b8047fa6bd56ba);
+        
+    
+        var popup_5c83dec1b66e6ae8ac6876fcf5067494 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0ccd2cbf933cba14041d46df6b4f05a1 = $(`<div id="html_0ccd2cbf933cba14041d46df6b4f05a1" style="width: 100.0%; height: 100.0%;">총 거리: 1172.18m / 1.17km 예상 소요 시간: 14.7분</div>`)[0];
+                popup_5c83dec1b66e6ae8ac6876fcf5067494.setContent(html_0ccd2cbf933cba14041d46df6b4f05a1);
+            
+        
+
+        marker_cf1c6f069eb2abf049a033cd02945bc6.bindPopup(popup_5c83dec1b66e6ae8ac6876fcf5067494)
+        ;
+
+        
+    
+</script>
+</html>
