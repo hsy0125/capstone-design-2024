@@ -15,3 +15,8 @@
 #### build.gradle.kts 수정: testImplementation 추가: app/build.gradle.kts 파일의 dependencies 블록에 아래 라인을 추가합니다:
 #### Build > Rebuild Project
 
+
+# 해결방안 1 
+## https://velog.io/@krrong/Android-%EA%B5%AC%EA%B8%80-%EB%A7%B5-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0 과정 따라가기 11.29까지
+# 해결방안 2
+## 그레들 싱크 맞추는 작업 더 알아보고 전체 버전 확인(필요시 재설치) - 11.30까지
